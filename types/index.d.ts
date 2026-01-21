@@ -1,3 +1,11 @@
+export type NavItem = {
+  title: string;
+  href: string;
+  disabled?: boolean;
+};
+
+
+
 export type SiteConfig = {
   name: string;
   description: string;
@@ -8,3 +16,7 @@ export type SiteConfig = {
     github: string;
   };
 };
+
+export type MarketingConfig = {
+  mainNav: NavItem[];
+}
